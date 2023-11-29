@@ -1,12 +1,15 @@
 logging:
   level:
-    root: debug
+    root: info
 
 server:
   tomcat:
-    max-connections: 8192
-    accept-count: 100
-    connection-timeout: 20000 # 60000
+    #max-connections: 8192
+    max-connections: 2
+    #accept-count: 100
+    connection-timeout: 20s # 60s
     threads:
-      max: 200
-      min-spare: 10
+      #max: 200
+      max: 2
+      #min-spare: 1
+    #keep-alive-timeout: -1
